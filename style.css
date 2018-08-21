@@ -1,0 +1,96 @@
+body { height: 100vh;
+    background-color: black;
+   
+
+}
+
+main {
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-gap: 2px;
+display: grid;
+padding: 10px;
+margin: 5px;
+}
+
+header {
+    padding: 30px;
+}
+h1 {
+    font-family: 'Oswald';
+    font-size: x-large;
+    color:darkgray;
+    position: initial;
+}
+h2 {
+    font-family: 'Sonsie One';
+    color: darkgray;
+    position: initial;
+    padding: 10px;
+}
+
+.box {
+    display: grid;
+    height: 200px;
+    grid-column: span 4;
+    background-position: center;
+    
+
+}
+
+.hidden-xs {
+    display:none;
+}
+
+.one {
+background-image: url(images/lake.jpg);
+}
+
+.two {
+    background-image: url(images/empire.jpg);
+}
+.three {
+    background-image: url(images/person.jpg);
+}
+
+.four {
+    background-image: url(images/tree.jpg);
+}
+
+.five {
+    background-image: url(images/geo.jpg);
+}
+.six {
+    background-image: url(images/sand.jpg);
+}
+.seven {
+    background-image: url(images/bridge.jpg)
+}
+.eight {
+    background-image: url(images/lens.jpg)
+}
+
+.box-title {
+    background-color: white;
+    height: 30px;
+    padding: 10px;
+    font-family: 'EB Garamond';
+    
+   
+
+}
+
+@media only screen and (min-width: 600px) {
+    .hidden-xs {
+        display:initial;
+    }
+main {
+    margin:auto;
+    padding: 50px;
+}
+    .box {
+        grid-column: span 1;
+   
+
+    }
+}
